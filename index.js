@@ -70,12 +70,12 @@
 
 // GZIP WITH HTTP //
 // const spdy = require("spdy");
-const express = require("express");
 // const fs = require("fs");
-var path = require("path");
-const compression = require("compression");
 // const { promisify } = require("util");
 // const readFile = promisify(fs.readFile);
+var path = require("path");
+const compression = require("compression");
+const express = require("express");
 const zlib = require('zlib');
 const app = express();
 app.use(compression());
