@@ -74,11 +74,11 @@
 // const { promisify } = require("util");
 // const readFile = promisify(fs.readFile);
 var path = require("path");
-// const compression = require("compression");
+const compression = require("compression");
 const express = require("express");
 const zlib = require('zlib');
 const app = express();
-// app.use(compression());
+app.use(compression());
 const port = process.env.PORT || 3000;
 app.use(express.static(path.join(__dirname, "public")));
 app.get("/", function (req, res) {
