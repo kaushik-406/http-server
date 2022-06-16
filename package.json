@@ -1,24 +1,32 @@
 {
-  "name": "lighthouse-ci",
+  "name": "ci-lighthouse-cli",
+  "private": "true",
   "version": "1.0.0",
   "description": "",
-  "main": "lighthouserc-ci.js",
+  "main": "index.js",
   "scripts": {
-    "start": "http-server src",
-    "start:ci": "npm run build && http-server dist"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nicobytes/codelab-lighthouse-ci.git"
+    "develop": "webpack --mode=development",
+    "build": "webpack --mode=production",
+    "lint": "eslint ./src --fix",
+    "ci:lint": "eslint ./src",
+    "test": "jest --watch",
+    "ci:test": "jest --ci",
+    "ci:lighthouse": "lhci autorun"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nicobytes/codelab-lighthouse-ci/issues"
-  },
-  "homepage": "https://github.com/nicobytes/codelab-lighthouse-ci#readme",
-  "dependencies": {
-    "http-server": "^0.12.3"
+  "devDependencies": {
+    "@babel/core": "^7.14.5",
+    "@babel/preset-env": "^7.14.5",
+    "@lhci/cli": "^0.8.0",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.27.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.3",
+    "html-webpack-plugin": "^5.3.1",
+    "jest": "^27.0.4",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.2"
   }
 }
