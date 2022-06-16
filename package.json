@@ -1,22 +1,24 @@
 {
-  "name": "http2",
+  "name": "lighthouse-ci",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lighthouserc-ci.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node index.js"
+    "start": "http-server src",
+    "start:ci": "npm run build && http-server dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicobytes/codelab-lighthouse-ci.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicobytes/codelab-lighthouse-ci/issues"
+  },
+  "homepage": "https://github.com/nicobytes/codelab-lighthouse-ci#readme",
   "dependencies": {
-    "brotli": "^1.3.2",
-    "compression": "^1.7.4",
-    "epress": "0.0.1-security",
-    "express": "^4.18.1",
-    "node-gzip": "^1.1.2",
-    "spdy": "^4.0.2",
-    "zlib": "^1.0.5"
+    "http-server": "^0.12.3"
   }
 }
