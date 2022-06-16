@@ -5,7 +5,8 @@
   "main": "lighthouserc-ci.js",
   "scripts": {
     "start": "http-server src",
-    "start:ci": "npm run build && http-server dist"
+    "start:ci": "npm run build && http-server dist",
+    "build":"node build.js"
   },
   "repository": {
     "type": "git",
