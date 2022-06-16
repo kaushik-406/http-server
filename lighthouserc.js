@@ -1,7 +1,8 @@
 module.exports = {
     ci: {
       collect: {
-        staticDistDir: './',
+        url: ['https://http-web-server.herokuapp.com'],
+        startServerCommand: 'rails server -e production',
       },
       upload: {
         target: 'temporary-public-storage',
