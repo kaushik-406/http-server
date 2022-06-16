@@ -5,13 +5,14 @@ module.exports = {
       startServerCommand: "rails server -e production",
     },
     asserts:{
-      assertions:{
-        'categories:performance':['error',{minScore:.6}],
-        'categories:accessibility':['error',{minScore:.6}],
-        'categories:best-practices':['error',{minScore:.6}],
-        'categories:seo':['error',{minScore:.6}],
-        'categories.pwa':'off',
-      }
+      // assertions:{
+      //   'categories:performance':['error',{minScore:.6}],
+      //   'categories:accessibility':['error',{minScore:.6}],
+      //   'categories:best-practices':['error',{minScore:.6}],
+      //   'categories:seo':['error',{minScore:.6}],
+      //   'categories.pwa':'off',
+      // }
+      perset:"lighthouse:recommended",
     },
     upload: {
       target: "temporary-public-storage",
