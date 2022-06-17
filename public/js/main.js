@@ -107,6 +107,7 @@
         autoplay: true,
         dots: false,
         loop: true,
+        lazyLoad: true,
         nav : true,
         navText : [
             '<i class="fa fa-angle-left" aria-hidden="true"></i>',
