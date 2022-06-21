@@ -96,6 +96,7 @@
         autoplay: false,
         smartSpeed: 1000,
         center: true,
+        lazyLoad: true,
         dots: true,
         loop: true,
         responsive: {
