@@ -80,6 +80,7 @@
         autoplay: false,
         smartSpeed: 1500,
         items: 1,
+        lazyLoad: true,
         dots: false,
         loop: true,
         nav : true,
