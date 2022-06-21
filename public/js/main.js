@@ -81,6 +81,8 @@
         smartSpeed: 1500,
         items: 1,
         lazyLoad: true,
+        autoplay:true,
+        autoplayTimeout:2000,
         dots: false,
         loop: true,
         nav : true,
@@ -97,6 +99,8 @@
         smartSpeed: 1000,
         center: true,
         lazyLoad: true,
+        autoplay:true,
+        autoplayTimeout:2000,
         dots: true,
         loop: true,
         responsive: {
