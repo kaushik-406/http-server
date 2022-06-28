@@ -78,6 +78,8 @@ const compression = require("compression");
 const express = require("express");
 const zlib = require('zlib');
 const app = express();
+const cors = require('cors')
+app.use(cors())
 app.use(compression());
 const port = process.env.PORT || 3000;
 app.use(express.static(path.join(__dirname, "public")));
