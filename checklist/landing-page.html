@@ -1269,9 +1269,9 @@
     </footer>
     <!-- FOOTER END -->
     <link rel="stylesheet" href="./css/tata-aia/footer-landing.css"/>
-    <script src="./js/tata-aia/jquery.min.js"></script>
-    <script src="./js/tata-aia/slick.min.js"></script>
-    <script src="./js/tata-aia/lozad.min.js"></script>
+    <script src="./js/tata-aia/jquery.min.js" defer></script>
+    <script src="./js/tata-aia/slick.min.js" defer></script>
+    <script src="./js/tata-aia/lozad.min.js" defer></script>
 
     <script>
       /* Lozad START*/
@@ -1282,6 +1282,7 @@
 
     <script>
       //   Testimonial START
+      window.onload =function(){
       $(".testi-carousel").slick({
         dots: true,
         infinite: false,
@@ -1318,6 +1319,7 @@
           },
         ],
       });
+    }
 
       //   Testimonial END
     </script>
