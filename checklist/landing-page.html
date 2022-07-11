@@ -68,11 +68,11 @@
           format("woff2");
       }
     </style>
-    <link rel="stylesheet" href="./css/tata-aia/header-landing.css"/>
-    <link rel="stylesheet" href="./css/tata-aia/firstfold.css"/>
-    <link rel="stylesheet" href="./css/tata-aia/slick.min.css"/>
-    <link rel="stylesheet" href="./css/tata-aia/slick-theme.min.css"/>
-    <link rel="stylesheet" href="./css/tata-aia/landing-page.css"/>
+    <link rel="stylesheet" href="./css/tata-aia/header-landing.css" />
+    <link rel="stylesheet" href="./css/tata-aia/firstfold.css" />
+    <link rel="stylesheet" href="./css/tata-aia/slick.min.css" />
+    <link rel="stylesheet" href="./css/tata-aia/slick-theme.min.css" />
+    <link rel="stylesheet" href="./css/tata-aia/landing-page.css" />
 
     <!-- <link rel="preload" href="./css/tata-aia/slick.min.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="./css/tata-aia/slick-theme.min.css" as="style" onload="this.rel='stylesheet'">
@@ -1268,58 +1268,56 @@
       </div>
     </footer>
     <!-- FOOTER END -->
-    <link rel="stylesheet" href="./css/tata-aia/footer-landing.css"/>
+    <link rel="stylesheet" href="./css/tata-aia/footer-landing.css" />
     <script src="./js/tata-aia/jquery.min.js" defer></script>
     <script src="./js/tata-aia/slick.min.js" defer></script>
     <script src="./js/tata-aia/lozad.min.js" defer></script>
 
     <script>
-      /* Lozad START*/
-      const observer = lozad(); // lazy loads elements with default selector as ".lozad"
-      observer.observe();
-      /* Lozad END*/
-    </script>
-
-    <script>
       //   Testimonial START
-      window.onload =function(){
-      $(".testi-carousel").slick({
-        dots: true,
-        infinite: false,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        prevArrow: false,
-        nextArrow: false,
-        responsive: [
-          {
-            breakpoint: 1366,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-              infinite: false,
-              dots: true,
-              arrow: false,
+      window.onload = function () {
+        $(".testi-carousel").slick({
+          dots: true,
+          infinite: false,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          prevArrow: false,
+          nextArrow: false,
+          responsive: [
+            {
+              breakpoint: 1366,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: false,
+                dots: true,
+                arrow: false,
+              },
             },
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              infinite: false,
-              slidesToShow: 1.3,
-              slidesToScroll: 1,
+            {
+              breakpoint: 600,
+              settings: {
+                infinite: false,
+                slidesToShow: 1.3,
+                slidesToScroll: 1,
+              },
             },
-          },
-          {
-            breakpoint: 380,
-            settings: {
-              infinite: false,
-              slidesToShow: 1.3,
-              slidesToScroll: 1,
+            {
+              breakpoint: 380,
+              settings: {
+                infinite: false,
+                slidesToShow: 1.3,
+                slidesToScroll: 1,
+              },
             },
-          },
-        ],
-      });
-    }
+          ],
+        });
+
+        /* Lozad START*/
+        const observer = lozad(); // lazy loads elements with default selector as ".lozad"
+        observer.observe();
+        /* Lozad END*/
+      };
 
       //   Testimonial END
     </script>
