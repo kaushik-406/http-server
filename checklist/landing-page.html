@@ -37,36 +37,39 @@
     />
     <style>
       @font-face {
-        font-family: "Helvetica";
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url("./css/tata-aia/fonts/helvetica.woff2") format("woff2");
-      }
+    font-family: 'Helvetica';
+    src: url('./css/tata-aia/fonts/helvetica.woff2') format('woff2'),
+        url('./css/tata-aia/fonts/subset-Helvetica.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    }
+    
+    @font-face {
+    font-family: 'HelveticaBold';
+    src: url('./css/tata-aia/fonts/helvetica-bold.woff2') format('woff2'),
+        url('./css/tata-aia/fonts/subset-Helvetica-Bold.woff') format('woff');
+    font-style: normal;
+    font-display: swap;
+    }
+    
+    @font-face {
+    font-family: 'Helvetica Light';
+    src: url('./css/tata-aia/fonts/Helvetica-Neue-Light.woff2') format('woff2'),
+        url('./css/tata-aia/fonts/subset-HelveticaNeue-Light.woff') format('woff');
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    }
 
-      @font-face {
-        font-family: "HelveticaBold";
-        font-style: normal;
-        font-display: swap;
-        src: url("./css/tata-aia/fonts/helvetica-bold.woff2") format("woff2");
-      }
-
-      @font-face {
-        font-family: "Helvetica Light";
-        font-style: normal;
-        font-weight: 300;
-        font-display: swap;
-        src: url("./css/tata-aia/fonts/Helvetica-Neue-Light.woff2")
-          format("woff2");
-      }
-
-      @font-face {
-        font-family: "Helvetica Neue";
-        font-style: normal;
-        font-display: swap;
-        src: url("./css/tata-aia/fonts/helvetica-neue-lt-std-Th.woff2")
-          format("woff2");
-      }
+    @font-face {
+    font-family: 'Helvetica Neue';
+    src: url('./css/tata-aia/fonts/helvetica-neue-lt-std-Th.woff2') format('woff2'),
+        url('./css/tata-aia/fonts/subset-HelveticaNeueLTStd-Th.woff') format('woff');
+    font-style: normal;
+    font-display: swap;
+    }
+    
     </style>
     <link rel="stylesheet" href="./css/tata-aia/header-landing.css" />
     <link rel="stylesheet" href="./css/tata-aia/firstfold.css" />
