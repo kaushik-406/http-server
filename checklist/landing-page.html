@@ -1296,8 +1296,15 @@
 
     <script>
       //   Testimonial START
-      window.onload = function () {
-        $(".testi-carousel").slick({
+      var initInterval = setInterval(function(){
+        if(window.jQuery) {
+            clearInterval(initInterval);
+            init(); // where init is the entry point for your code execution
+        }
+    }, 20);
+    
+function init(){
+  $(".testi-carousel").slick({
           dots: true,
           infinite: false,
           slidesToShow: 2,
@@ -1338,8 +1345,7 @@
         const observer = lozad(); // lazy loads elements with default selector as ".lozad"
         observer.observe();
         /* Lozad END*/
-      };
-
+}
       //   Testimonial END
     </script>
 
