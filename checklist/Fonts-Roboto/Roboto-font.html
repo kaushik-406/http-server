@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="./css/style.css" />
     <!-- <link rel="stylesheet" href="./css/stylesheet-woff.css" /> -->
     <style>
-      html{
-        font-family: 'Roboto';
+      html,
+      body {
+        font-family: Roboto;
       }
-      h2 {
-        font-family: 'Roboto';
-        src: url("./Roboto/Roboto-Light.woff") format("woff");
-        font-weight: 300;
+      @font-face {
+        font-family: "Roboto";
+        src: url("./Roboto/Roboto-Regular.woff2") format("woff2");
+        font-weight: normal;
         font-style: normal;
         font-display: swap;
       }
@@ -35,7 +36,7 @@
       </picture>
     </div>
     <div class="text border-top">
-      <h2 class="margin-0">
+      <p class="margin-0">
         Purple light has higher energy, and gets scattered more than blue. But
         the answer to why we see blue skies isn’t a matter of physics; it’s an
         answer for physiology. Think back to high school biology. Ever done an
@@ -44,7 +45,7 @@
         color-sensitive cones – three types of cones to be exact. These red,
         green and blue cones detect a range of the natural colors in light and
         work together to produce all the colors you see in the world.
-      </h2>
+      </p>
     </div>
   </body>
 </html>
